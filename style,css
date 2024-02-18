@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --siyah:#000000;
+    --mavi:rgb(23, 92, 219);
+    --turkuaz:rgb(161, 101, 10);
+    --koyutur:rgba(110, 9, 35, 0.671);
+    --kırmızı:red;
+    --koyu:rgb(201, 19, 19);
+    --beyaz:white;
+    --font-size: 1.3rem;
+    --yeşil: rgb(167, 3, 3);
+    --mono:"Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+body{
+    font-family:var(--sans);
+    background-color: var(--siyah);
+    color: var(--beyaz);
+    font-size: var(--font-size);
+    padding: 0;
+    margin: 0;
+
+    
+}
+h1,h2,h3{
+    margin: 0;
+}
+
+a{
+    color: var(--koyu);
+}
+a:hover{
+    color: var(--kırmızı);
+    text-decoration: none;
+    
+}
+/* nav kısmı */
+nav{
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+      
+    
+}
+nav h1 a{
+    font-family: var(--sans);
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem; 
+    
+}
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+    
+}
+
+nav [class*="fa-"]{
+    font-size: 150%;
+}
+nav .fa-facebook{
+    color: var(--turkuaz);
+}
+nav .fa-facebook:hover{
+    color: var(--mavi);-
+}
+nav .fa-youtube{
+    color: var(--turkuaz);
+}
+nav .fa-youtube:hover{
+    color: var(--kırmızı);
+}
+nav a{
+    color: var(--beyaz);
+    text-decoration: none;
+    display: block;
+    
+}
+nav a:hover{
+    color: var(--koyu);
+}
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+    color: var(--turkuaz);
+}
+nav h1 [class*="fa-"]:hover{
+    font-size: 100%;
+    color: var(--koyu);
+}
+
+/* intro kısmı */
+
+#intro{
+    padding: 4rem 2rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+#intro p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#intro .name{
+    font-family: var(--mono);
+}
+.name span{
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--turkuaz);
+    display: block;
+}
+#intro h2{
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+/* hakkımda kısmı */
+
+.section-blue{
+    background-color: var(--yeşil);
+    
+}
+#projects {
+    padding: 4rem 2rem 10rem 1rem;
+    
+}
+#projects h2{
+    margin-bottom: calc(2.5rem * 1.5);
+    font-size: 2.5rem;
+}
+#projects h3{
+    color: var(--turkuaz);
+
+}
+#projects h4{
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+
+}
+.blackbox{
+    background-color: var(--siyah);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#projects ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+#projects img{
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--beyaz);
+    border-top : 1px solid var(--beyaz);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/* iletişim kısmı */
+.section-turkuaz{
+    background-color: var(--koyutur);
+}
+.gradient{
+    background: linear-gradient(353deg, rgb(160, 6, 52) 0%, rgb(14, 200, 233) 100%);
+    height: 2px;
+}
+#contact{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    
+}
+#contact p:last-child{
+    margin-top: 3rem;
+}
+.button{
+    background: linear-gradient(353deg, rgb(216, 104, 13) 0%, rgb(104, 39, 104) 100%);
+    color: var(--beyaz);
+    border: 1px solid var(--siyah);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--mono);
+    text-decoration: none;
+}
+.button:hover{
+    background: linear-gradient(356deg, rgb(179, 32, 237) 0%, rgb(153, 50, 10) 93%);;
+    color: var(--beyaz);
+}
+
+/* footer */
+#alt h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+footer li{
+    font-size: 150%;    
+}
+footer p{
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+
+/* responsive */
+@media (min-width: 850px){
+    nav{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+        
+    }
+    
+    
+}
+
+@media (min-width: 550px){
+    article{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    #projects{
+        max-width: 1200px;
+        margin :0 auto;
+    }
+    #projects img{
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+
+    .text{
+        order: 2;
+        grid-column: 5/11;
+        grid-row: 1/2;
+        text-align: right;
+    }
+    #projects ul{
+        justify-content: flex-end;
+    }
+    #projects .reverse .text {
+        grid-column: 1/7;
+        order: 2;
+        text-align: left;
+    }
+    #projects .reverse img {
+        grid-column: 6/11;
+        grid-row: 1/2;
+    }
+    #projects .reverse ul {
+        justify-content: flex-start;
+    }
+
+}
